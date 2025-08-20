@@ -1,0 +1,418 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Andrea Cappelluti - Portfolio</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #e0e0e0;
+            background: #121212;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .portfolio-card {
+            background: #1f1f1f;
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+            overflow: hidden;
+            margin: 20px 0;
+            transition: transform 0.3s ease;
+        }
+
+        .portfolio-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .header {
+            background: #1f1f1f;
+            color: white;
+            padding: 40px;
+            text-align: center;
+            position: relative;
+            border-bottom: 3px solid #00bcd4;
+        }
+
+        .profile-info {
+            position: relative;
+            z-index: 2;
+        }
+
+        .name {
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+            color: #00bcd4;
+        }
+
+        .title {
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+            opacity: 0.9;
+        }
+
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 30px;
+            margin-top: 20px;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 1rem;
+        }
+
+        .contact-item i {
+            color: #00bcd4;
+        }
+
+        .section {
+            padding: 40px;
+        }
+
+        .section-title {
+            font-size: 2rem;
+            margin-bottom: 30px;
+            color: #00bcd4;
+            border-bottom: 3px solid #00bcd4;
+            padding-bottom: 10px;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .section-title i {
+            color: #00bcd4;
+        }
+
+        .about-me p {
+            font-size: 1.1rem;
+            text-align: center;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+        }
+
+        .skill-category {
+            background: #2a2a2a;
+            border-radius: 12px;
+            padding: 25px;
+            text-align: center;
+            border: 2px solid #00bcd4;
+            transition: all 0.3s ease;
+        }
+
+        .skill-category:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,188,212,0.4);
+        }
+
+        .skill-category h3 {
+            color: #00bcd4;
+            margin-bottom: 15px;
+            font-size: 1.2rem;
+        }
+
+        .skill-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .skill-list li {
+            background: #333;
+            color: #e0e0e0;
+            padding: 12px;
+            margin-bottom: 12px;
+            border-radius: 5px;
+            transition: background 0.3s ease;
+        }
+
+        .skill-list li:hover {
+            background: #00bcd4;
+            color: #121212;
+        }
+
+        .project-item {
+            background: #2a2a2a;
+            border-radius: 12px;
+            padding: 25px;
+            margin-bottom: 20px;
+            border-left: 4px solid #00bcd4;
+            transition: all 0.3s ease;
+        }
+
+        .project-item:hover {
+            background: #333;
+            transform: translateX(5px);
+        }
+
+        .project-title {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: #00bcd4;
+            margin-bottom: 8px;
+        }
+
+        .project-description {
+            margin-top: 15px;
+        }
+
+        .education-item {
+            background: #2a2a2a;
+            border-radius: 12px;
+            padding: 25px;
+            margin-bottom: 20px;
+            border-left: 4px solid #00bcd4;
+        }
+
+        .degree {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: #00bcd4;
+            margin-bottom: 8px;
+        }
+
+        .university {
+            color: #a0a0a0;
+            font-weight: 500;
+            margin-bottom: 5px;
+        }
+
+        .certificates {
+            background: #2a2a2a;
+            border-radius: 12px;
+            padding: 25px;
+            margin-top: 20px;
+        }
+
+        .certificates h3 {
+            color: #00bcd4;
+            margin-bottom: 15px;
+        }
+
+        .cert-list {
+            list-style: none;
+        }
+
+        .cert-list li {
+            padding: 8px 0;
+            padding-left: 25px;
+            position: relative;
+            border-bottom: 1px solid #333;
+        }
+
+        .cert-list li:last-child {
+            border-bottom: none;
+        }
+
+        .cert-list li::before {
+            content: '🏆';
+            position: absolute;
+            left: 0;
+            color: #00bcd4;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 30px;
+            background: #1f1f1f;
+            color: white;
+            margin-top: 40px;
+        }
+
+        .contact-btn {
+            display: inline-block;
+            padding: 12px 25px;
+            background: #00bcd4;
+            color: #121212;
+            border-radius: 5px;
+            text-decoration: none;
+            margin-top: 20px;
+            transition: background 0.3s ease;
+        }
+
+        .contact-btn:hover {
+            background: #0097a7;
+            text-decoration: none;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="portfolio-card">
+            <div class="header">
+                <div class="profile-info">
+                    <h1 class="name">Andrea Cappelluti</h1>
+                    <p class="title">Data Scientist & Analyst</p>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <a href="mailto:andreacappelluti7@gmail.com" style="color: white;">andreacappelluti7@gmail.com</a>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>+39 3397888853</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fab fa-linkedin"></i>
+                            <a href="https://www.linkedin.com/in/andrea-cappelluti-9b1a61282" style="color: white;" target="_blank">LinkedIn</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section about-me">
+                <h2 class="section-title">
+                    <i class="fas fa-user"></i>
+                    About Me
+                </h2>
+                <p>A Master's student in Data Science with a strong foundation in Economics and Big Data. Passionate about machine learning, data analysis, and business intelligence, with hands-on experience in data science projects for sales forecasting, trend analysis, and the development of AI-based multi-agent systems. Seeking opportunities to apply my skills and contribute to innovative projects.</p>
+            </div>
+
+            <div class="section">
+                <h2 class="section-title">
+                    <i class="fas fa-cogs"></i>
+                    Skills
+                </h2>
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h3><i class="fas fa-code"></i> Programming Languages</h3>
+                        <ul class="skill-list">
+                            <li>Python</li>
+                            <li>R</li>
+                            <li>SQL</li>
+                        </ul>
+                    </div>
+                    <div class="skill-category">
+                        <h3><i class="fas fa-chart-bar"></i> Data Visualization Tools</h3>
+                        <ul class="skill-list">
+                            <li>Power BI</li>
+                            <li>Tableau</li>
+                            <li>Orange Data Mining</li>
+                            <li>Streamlit</li>
+                        </ul>
+                    </div>
+                    <div class="skill-category">
+                        <h3><i class="fas fa-project-diagram"></i> Frameworks</h3>
+                        <ul class="skill-list">
+                            <li>Flask</li>
+                            <li>FastAPI</li>
+                            <li>Langchain</li>
+                            <li>CrewAI</li>
+                            <li>OpenAI Agent SDK</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2 class="section-title">
+                    <i class="fas fa-project-diagram"></i>
+                    Projects
+                </h2>
+                <div class="project-item">
+                    <h3 class="project-title">Multi-Agent System for Natural Language Analysis on Public Datasets - Reply Project</h3>
+                    <p class="project-description">Developed an AI-powered multi-agent system to transform natural language questions into automated data analysis and visualizations, using large language models (GPT-4.1), Python, and Streamlit.</p>
+                </div>
+                <div class="project-item">
+                    <h3 class="project-title">Sales Forecasting System for Retail Analytics – Unieuro Project</h3>
+                    <p class="project-description">Led a data science project to predict 2024 sales volumes for key product categories, combining business intelligence, statistical modeling, and machine learning. Developed interactive dashboards with Power BI and compared multiple machine learning models.</p>
+                </div>
+                <div class="project-item">
+                    <h3 class="project-title">SDG7 trend analysis</h3>
+                    <p class="project-description">Analysis of an international dataset (2000-2020) to examine key variables related to SDG7, with the creation of predictive models to estimate energy consumption and predict GDP growth rate.</p>
+                </div>
+                <div class="project-item">
+                    <h3 class="project-title">Key features analysis for cinematic products</h3>
+                    <p class="project-description">Analysis of global TV series and movie data to explore relationships and predict the success of cinematic products. Creation of predictive models and application of clustering algorithms.</p>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2 class="section-title">
+                    <i class="fas fa-graduation-cap"></i>
+                    Education
+                </h2>
+                <div class="education-item">
+                    <h3 class="degree">Master's Degree in Data Science and Management</h3>
+                    <p class="university">LUISS Guido Carli (in progress)</p>
+                </div>
+                <div class="education-item">
+                    <h3 class="degree">Erasmus+ program</h3>
+                    <p class="university">TalTech University (09/2025 - 02/2026)</p>
+                </div>
+                <div class="education-item">
+                    <h3 class="degree">Bachelor's Degree in Economics and Big Data</h3>
+                    <p class="university">Università degli studi Roma tre (Final Grade: 102/110)</p>
+                </div>
+                <div class="education-item">
+                    <h3 class="degree">High School Diploma</h3>
+                    <p class="university">Liceo scientifico Democrito (Final Grade: 80/100)</p>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2 class="section-title">
+                    <i class="fas fa-certificate"></i>
+                    Certificates
+                </h2>
+                <div class="certificates">
+                    <ul class="cert-list">
+                        <li>Anthropic: Introduction to Model Context Protocol</li>
+                        <li>Anthropic: AI Fluency: Framework & Foundations</li>
+                        <li>Codecademy: How to Analyze Business Metrics with SQL</li>
+                        <li>Codecademy: Learn Statistics with R</li>
+                        <li>Codecademy: BI Dashboards with Power BI</li>
+                        <li>Codecademy: BI Dashboards with Tableau</li>
+                        <li>Codecademy: Learn Prompt Engineering</li>
+                        <li>E-Learning: Python(advanced)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer" id="contact">
+            <h2>Contact</h2>
+            <p>Feel free to reach out to me via email or phone.</p>
+            <p>Email: <a href="mailto:andreacappelluti7@gmail.com" style="color: white;">andreacappelluti7@gmail.com</a> | Phone: +39 3397888853</p>
+            <a href="#" class="contact-btn">Contact Me</a>
+            <p>&copy; 2025 Andrea Cappelluti - Portfolio</p>
+        </div>
+    </div>
+
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
