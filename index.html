@@ -3,384 +3,311 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Andrea Cappelluti - Data Scientist & Analyst</title>
+    <title>Andrea Cappelluti | Data Scientist</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
+    
     <header class="header">
         <nav class="nav container">
-            <a href="#home" class="nav__brand-link" data-page="home">
-                <div class="nav__brand">
-                    <h2>Andrea Cappelluti</h2>
-                </div>
+            <a href="#home" class="nav__logo">
+                <span>//</span> Andrea Cappelluti
             </a>
+            <button class="nav__toggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
             <div class="nav__menu">
                 <ul class="nav__list">
-                    <li><a href="#home" class="nav__link active" data-page="home">Home</a></li>
-                    <li><a href="#projects" class="nav__link" data-page="projects">Projects</a></li>
-                    <li><a href="#education" class="nav__link" data-page="education">Education</a></li>
-                    <li><a href="#skills" class="nav__link" data-page="skills">Skills</a></li>
-                    <li><a href="#contact" class="nav__link" data-page="contact">Contact</a></li>
+                    <li><a href="#home" class="nav__link active">Start</a></li>
+                    <li><a href="#about" class="nav__link">About</a></li>
+                    <li><a href="#projects" class="nav__link">Work</a></li>
+                    <li><a href="#education" class="nav__link">Education</a></li>
+                    <li><a href="#skills" class="nav__link">Skills</a></li>
+                    <li><a href="#contact" class="nav__link">Contact</a></li>
                 </ul>
             </div>
         </nav>
     </header>
 
-    <main class="main">
-        <section id="home" class="page active">
-            <section class="hero">
-                <div class="container">
-                    <div class="hero__content">
-                        <div class="hero__text">
-                            <h1 class="hero__name">Andrea Cappelluti</h1>
-                            <h2 class="hero__title">Data Scientist & Analyst</h2>
-                            <p class="hero__location">📍 Rome, Italy</p>
-                            <div class="hero__actions">
-                                <a href="#contact" class="btn btn--primary" data-page="contact">Get in Touch</a>
-                                <a href="#projects" class="btn btn--outline" data-page="projects">View Projects</a>
-                            </div>
-                        </div>
-                        
-                    </div>
-                </div>
-            </section>
-
-            <section class="about">
-                <div class="container">
-                    <h2 class="section-title">About Me</h2>
-                    <div class="about__content">
-                        <p class="about__text">A Master's student in Data Science and Management with a strong foundation in Economics and Big Data. Passionate about machine learning, data analysis, and business intelligence, with hands-on experience in data science projects for sales forecasting, trend analysis, and the development of AI-based multi-agent systems. Seeking opportunities to apply my skills and contribute to innovative projects.</p>
-                    </div>
-                </div>
-            </section>
-
-            <section class="featured-projects">
-                <div class="container">
-                    <h2 class="section-title">Featured Projects</h2>
-                    <div class="projects-grid">
-                        <div class="project-card" data-project="unieuro-forecasting">
-                            <div class="project-card__header">
-                                <h3 class="project-card__title">Unieuro Retail Sales Forecasting</h3>
-                                <span class="project-card__category">Sales Analytics & ML</span>
-                            </div>
-                            <div class="project-card__body">
-                                <p class="project-card__description">Led a comprehensive sales forecasting project for key product categories using advanced machine learning techniques and business intelligence tools.</p>
-                                <div class="project-card__tech">
-                                    <span class="tech-tag">Python</span>
-                                    <span class="tech-tag">Power BI</span>
-                                    <span class="tech-tag">Machine Learning</span>
-                                </div>
-                            </div>
-                            <div class="project-card__footer">
-                                <button class="btn btn--sm btn--primary project-details-btn" data-project="unieuro-forecasting">View Details</button>
-                            </div>
-                        </div>
-
-                        <div class="project-card" data-project="multi-agent-system">
-                            <div class="project-card__header">
-                                <h3 class="project-card__title">Multi-Agent System for NLP Analysis</h3>
-                                <span class="project-card__category">AI & NLP</span>
-                            </div>
-                            <div class="project-card__body">
-                                <p class="project-card__description">Co-developed an AI-powered system that transforms natural language questions into automated data analysis using GPT-4.1.</p>
-                                <div class="project-card__tech">
-                                    <span class="tech-tag">OpenAI GPT-4.1</span>
-                                    <span class="tech-tag">Python</span>
-                                    <span class="tech-tag">Streamlit</span>
-                                </div>
-                            </div>
-                            <div class="project-card__footer">
-                                <button class="btn btn--sm btn--primary project-details-btn" data-project="multi-agent-system">View Details</button>
-                            </div>
-                        </div>
-
-                        <div class="project-card" data-project="tv-movies-analysis">
-                            <div class="project-card__header">
-                                <h3 class="project-card__title">TV Series & Movies Popularity Analysis</h3>
-                                <span class="project-card__category">Data Analysis & Predictive Modeling</span>
-                            </div>
-                            <div class="project-card__body">
-                                <p class="project-card__description">Comprehensive analysis of global entertainment content to understand popularity drivers using machine learning and statistical methods.</p>
-                                <div class="project-card__tech">
-                                    <span class="tech-tag">SQL</span>
-                                    <span class="tech-tag">Orange Data Mining</span>
-                                    <span class="tech-tag">Machine Learning</span>
-                                </div>
-                            </div>
-                            <div class="project-card__footer">
-                                <button class="btn btn--sm btn--primary project-details-btn" data-project="tv-movies-analysis">View Details</button>
-                            </div>
-                        </div>
-
-                        <div class="project-card" data-project="sdg7-energy-analysis">
-                            <div class="project-card__header">
-                                <h3 class="project-card__title">SDG7 Global Energy Analysis</h3>
-                                <span class="project-card__category">Sustainability Analytics & ML</span>
-                            </div>
-                            <div class="project-card__body">
-                                <p class="project-card__description">Comprehensive analysis of global sustainable energy trends with predictive modeling for energy consumption and policy insights.</p>
-                                <div class="project-card__tech">
-                                    <span class="tech-tag">Python</span>
-                                    <span class="tech-tag">Machine Learning</span>
-                                    <span class="tech-tag">Data Visualization</span>
-                                </div>
-                            </div>
-                            <div class="project-card__footer">
-                                <button class="btn btn--sm btn--primary project-details-btn" data-project="sdg7-energy-analysis">View Details</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </section>
-
-        <section id="projects" class="page">
+    <main>
+        <!-- HERO -->
+        <section id="home" class="hero">
             <div class="container">
-                <h1 class="page-title">Projects</h1>
-                <div class="projects-list">
-                    <div class="project-item">
-                        <h3 class="project-title">Unieuro Retail Sales Forecasting</h3>
-                        <span class="project-period">March 2025 - April 2025</span>
-                        <p class="project-overview">Led a comprehensive sales forecasting project for key product categories using advanced machine learning techniques and business intelligence tools.</p>
-                        <button class="btn btn--primary project-details-btn" data-project="unieuro-forecasting">View Details</button>
-                    </div>
-                    <div class="project-item">
-                        <h3 class="project-title">Multi-Agent System for Natural Language Civic Data Analysis</h3>
-                        <span class="project-period">March 2025 - April 2025</span>
-                        <p class="project-overview">Co-developed an AI-powered multi-agent system capable of answering natural language questions with real data analysis and visualizations.</p>
-                        <button class="btn btn--primary project-details-btn" data-project="multi-agent-system">View Details</button>
-                    </div>
-                    <div class="project-item">
-                        <h3 class="project-title">Analysis of TV Series and Movies Popularity</h3>
-                        <span class="project-period">January 2024 - March 2024</span>
-                        <p class="project-overview">Comprehensive analysis of global entertainment content to understand popularity drivers using machine learning and statistical methods.</p>
-                        <button class="btn btn--primary project-details-btn" data-project="tv-movies-analysis">View Details</button>
-                    </div>
-                    <div class="project-item">
-                        <h3 class="project-title">SDG7 Global Energy Analysis & Prediction</h3>
-                        <span class="project-period">March 2024 - May 2024</span>
-                        <p class="project-overview">Academic research project exploring global sustainable energy trends focusing on UN SDG7 with predictive modeling.</p>
-                        <button class="btn btn--primary project-details-btn" data-project="sdg7-energy-analysis">View Details</button>
+                <div class="hero__content">
+                    <span class="hero__greeting">Hello, I'm Andrea.</span>
+                    <h1 class="hero__headline">
+                        I transform complex data into <span class="gradient-text">actionable intelligence</span>.
+                    </h1>
+                    <p class="hero__subheadline">
+                        Highly analytical and results-driven Data Scientist adept at leveraging advanced analytics, machine learning, and AI to transform complex datasets into actionable insights and drive business growth.
+                    </p>
+                    <div class="btn-group">
+                        <a href="#projects" class="btn btn--primary">View Case Studies</a>
+                        <a href="#contact" class="btn btn--outline">Contact Me</a>
                     </div>
                 </div>
             </div>
         </section>
 
-        <div id="project-modal" class="modal hidden">
-            <div class="modal__overlay">
-                <div class="modal__content">
-                    <div class="modal__header">
-                        <h2 id="modal-title"></h2>
-                        <button class="modal__close">&times;</button>
+        <!-- ABOUT -->
+        <section id="about" class="section">
+            <div class="container">
+                <div class="grid about-grid">
+                    <div class="about-text">
+                        <h2>About Me</h2>
+                        <br>
+                        <p>
+                            I am a Master's student in <strong>Data Science and Management</strong> with a strong academic background in Economics and Big Data. My approach combines statistical rigor with modern software engineering practices to extract maximum value from data.
+                        </p>
+                        <br>
+                        <p>
+                            My expertise spans the entire data lifecycle, from <strong>data preprocessing and analysis</strong> to <strong>machine learning (ML), AI model development, and deep learning architectures</strong>. I am passionate about crafting solutions that are not only statistically sound but also deliver tangible business impact.
+                        </p>
                     </div>
-                    <div class="modal__body">
-                        <div class="project-detail">
-                            <p id="modal-period" class="project-period"></p>
-                            <p id="modal-category" class="project-category"></p>
-                            
-                            <h3>Project Overview</h3>
-                            <p id="modal-overview"></p>
-                            
-                            <h3>Key Responsibilities & Workflow</h3>
-                            <ul id="modal-workflow"></ul>
-                            
-                            <h3>Technical Methodology</h3>
-                            <p id="modal-methodology"></p>
-                            
-                            <h3>Results & Findings</h3>
-                            <p id="modal-results"></p>
-                            
-                            <h3>Technical Stack</h3>
-                            <p id="modal-tech-stack"></p>
-                        </div>
+                    
+                    <div class="about-summary">
+                        <p>
+                            <span class="highlight">Current Focus:</span> Advanced analytics, predictive modeling, and AI-driven automation.
+                        </p>
+                        <br>
+                        <p>
+                            <span class="highlight">Key Skills:</span> Data wrangling, statistical analysis, model deployment, business intelligence (BI) dashboarding, and developing robust data pipelines.
+                        </p>
+                        <br>
+                        <p>
+                            I thrive in environments where data curiosity meets business challenges, eager to contribute my technical skills to innovative projects.
+                        </p>
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
 
-        <section id="education" class="page">
+        <!-- PROJECTS -->
+        <section id="projects" class="section">
             <div class="container">
-                <h1 class="page-title">Education & Qualifications</h1>
+                <h2>Featured Projects</h2>
+                <p style="margin-bottom: 40px">Selected works demonstrating end-to-end data capabilities, from analysis to advanced ML and AI solutions.</p>
                 
-                <div class="education-section">
-                    <h2 class="section-subtitle">Academic Background</h2>
-                    <div class="timeline">
-                        <div class="timeline-item">
-                            <div class="timeline-marker"></div>
-                            <div class="timeline-content">
-                                <h3>Master's Degree in Data Science and Management (ENG)</h3>
-                                <p class="institution">LUISS Guido Carli, Rome, Italy</p>
-                                <p class="period">09/2024 – Present</p>
-                            </div>
+                <div class="projects-grid grid">
+                    <!-- Project 1 -->
+                    <div class="project-card" data-project="unieuro-forecasting">
+                        <div class="folder-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
                         </div>
-                        
-                        <div class="timeline-item">
-                            <div class="timeline-marker"></div>
-                            <div class="timeline-content">
-                                <h3>Erasmus+ Exchange Program</h3>
-                                <p class="institution">TalTech University, Tallinn, Estonia</p>
-                                <p class="period">09/2025 – 02/2026</p>
-                            </div>
-                        </div>
-                        
-                        <div class="timeline-item">
-                            <div class="timeline-marker"></div>
-                            <div class="timeline-content">
-                                <h3>Bachelor's Degree in Economics and Big Data (ITA)</h3>
-                                <p class="institution">Università degli studi Roma tre, Rome, Italy</p>
-                                <p class="period">09/2021 – 07/2024</p>
-                                <p class="grade">Grade: 102/110</p>
-                            </div>
-                        </div>
-                        
-                        <div class="timeline-item">
-                            <div class="timeline-marker"></div>
-                            <div class="timeline-content">
-                                <h3>High School Diploma</h3>
-                                <p class="institution">Liceo scientifico Democrito, Rome, Italy</p>
-                                <p class="period">09/2016 – 06/2021</p>
-                                <p class="grade">Grade: 80/100</p>
-                            </div>
+                        <h3 class="project-title">Unieuro Sales Forecasting</h3>
+                        <p class="project-desc">Strategic predictive analytics for a major retailer. Forecasting sales for high-value categories to optimize inventory.</p>
+                        <div class="tech-stack-list">
+                            <span class="tech-badge">Python</span>
+                            <span class="tech-badge">XGBoost</span>
+                            <span class="tech-badge">Power BI</span>
                         </div>
                     </div>
-                </div>
 
-                <div class="education-section">
-                    <h2 class="section-subtitle">Certifications</h2>
-                    <div class="certifications-grid">
-                        <div class="certification-card">
-                            <div class="certification-name">Introduction to Model Context Protocol</div>
-                            <div class="certification-org">Anthropic</div>
+                    <!-- Project 2 -->
+                    <div class="project-card" data-project="multi-agent-system">
+                        <div class="folder-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
                         </div>
-                        <div class="certification-card">
-                            <div class="certification-name">AI Fluency: Framework & Foundations</div>
-                            <div class="certification-org">Anthropic</div>
-                        </div>
-                        <div class="certification-card">
-                            <div class="certification-name">How to Analyze Business Metrics with SQL</div>
-                            <div class="certification-org">Codecademy</div>
-                        </div>
-                        <div class="certification-card">
-                            <div class="certification-name">Learn Statistics with R</div>
-                            <div class="certification-org">Codecademy</div>
-                        </div>
-                        <div class="certification-card">
-                            <div class="certification-name">BI Dashboards with Power BI</div>
-                            <div class="certification-org">Codecademy</div>
-                        </div>
-                        <div class="certification-card">
-                            <div class="certification-name">BI Dashboards with Tableau</div>
-                            <div class="certification-org">Codecademy</div>
-                        </div>
-                        <div class="certification-card">
-                            <div class="certification-name">Learn Prompt Engineering</div>
-                            <div class="certification-org">Codecademy</div>
-                        </div>
-                        <div class="certification-card">
-                            <div class="certification-name">Python (Advanced)</div>
-                            <div class="certification-org">Study Section E-Learning</div>
+                        <h3 class="project-title">Multi-Agent NLP System</h3>
+                        <p class="project-desc">AI architecture transforming natural language queries into automated data analysis workflows using GPT-4 agents.</p>
+                        <div class="tech-stack-list">
+                            <span class="tech-badge">OpenAI API</span>
+                            <span class="tech-badge">Streamlit</span>
+                            <span class="tech-badge">LangChain</span>
                         </div>
                     </div>
-                </div>
 
-                <div class="education-section">
-                    <h2 class="section-subtitle">Languages</h2>
-                    <div class="languages">
-                        <div class="language-item">
-                            <h3>Italian</h3>
-                            <p>Native</p>
+                    <!-- Project 3 -->
+                    <div class="project-card" data-project="tv-movies-analysis">
+                        <div class="folder-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polygon points="10 8 16 12 10 16 10 8"></polygon></svg>
                         </div>
-                        <div class="language-item">
-                            <h3>English</h3>
-                            <p>C1</p>
+                        <h3 class="project-title">Content Popularity Analysis</h3>
+                        <p class="project-desc">Statistical analysis of global entertainment content to identify key drivers of viewer engagement.</p>
+                        <div class="tech-stack-list">
+                            <span class="tech-badge">SQL</span>
+                            <span class="tech-badge">Statistics</span>
+                            <span class="tech-badge">Orange Data Mining</span>
                         </div>
-                        <div class="language-item">
-                            <h3>Spanish</h3>
-                            <p>A2</p>
+                    </div>
+
+                    <!-- Project 4 -->
+                    <div class="project-card" data-project="sdg7-energy-analysis">
+                        <div class="folder-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 20V10"></path><path d="M12 20V4"></path><path d="M6 20v-6"></path></svg>
+                        </div>
+                        <h3 class="project-title">SDG7 Energy Trends</h3>
+                        <p class="project-desc">Predictive modeling for global sustainable energy consumption patterns to generate policy insights.</p>
+                        <div class="tech-stack-list">
+                            <span class="tech-badge">Random Forest</span>
+                            <span class="tech-badge">Matplotlib</span>
+                            <span class="tech-badge">Scikit-learn</span>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="skills" class="page">
+        <!-- EDUCATION -->
+        <section id="education" class="section">
             <div class="container">
-                <h1 class="page-title">Skills & Technologies</h1>
-                
-                <div class="skills-grid">
-                    <div class="skills-category">
-                        <h2 class="skills-category__title">Languages</h2>
-                        <div class="skills-tags">
-                            <span class="skill-tag">Italian (Native)</span>
-                            <span class="skill-tag">English (C1)</span>
-                            <span class="skill-tag">Spanish (A2)</span>
-                        </div>
+                <h2>Education Path</h2>
+                <div class="timeline" style="margin-top: 40px">
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <span class="timeline-date">Sep 2024 - Present</span>
+                        <h3 class="timeline-title">Master's in Data Science and Management</h3>
+                        <p class="timeline-org">LUISS Guido Carli, Rome</p>
+                        <p>Specialization in Advanced Machine Learning and Business Analytics.</p>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <span class="timeline-date">Sep 2025 - Feb 2026</span>
+                        <h3 class="timeline-title">Erasmus+ Exchange Program</h3>
+                        <p class="timeline-org">TalTech University, Tallinn</p>
+                        <p>Focus on Digital Governance and Data Systems.</p>
                     </div>
 
-                    <div class="skills-category">
-                        <h2 class="skills-category__title">IT Skills</h2>
-                        <div class="skills-tags">
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <span class="timeline-date">Sep 2021 - Jul 2024</span>
+                        <h3 class="timeline-title">Bachelor's in Economics and Big Data</h3>
+                        <p class="timeline-org">Università Roma Tre</p>
+                        <p>Graduated with 102/110. Thesis on Statistical Modeling for Economics.</p>
+                    </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <span class="timeline-date">Sep 2016 - Jul 2021</span>
+                            <h3 class="timeline-title">Scientific High School Diploma</h3>
+                            <p class="timeline-org">Liceo Democrito</p>
+                        </div>                </div>
+            </div>
+        </section>
+
+        <!-- SKILLS -->
+        <section id="skills" class="section">
+            <div class="container">
+                <h2>Technical Expertise</h2>
+                <br>
+                <div class="skills-container grid" style="grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));">
+                    <div class="skill-category">
+                        <h3>Core Tech</h3>
+                        <div class="skill-tags">
                             <span class="skill-tag">Python</span>
-                            <span class="skill-tag">R</span>
-                            <span class="skill-tag">Orange Data Mining</span>
                             <span class="skill-tag">SQL</span>
+                            <span class="skill-tag">R</span>
+                            <span class="skill-tag">Git</span>
+                            <span class="skill-tag">Preprocessing</span>
+                            <span class="skill-tag">Data Wrangling</span>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-category">
+                        <h3>Data Science & ML</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Pandas</span>
+                            <span class="skill-tag">Scikit-learn</span>
+                            <span class="skill-tag">XGBoost</span>
+                            <span class="skill-tag">Deep Learning</span>
+                            <span class="skill-tag">AI/ML Models</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-category">
+                        <h3>Visualization & BI</h3>
+                        <div class="skill-tags">
                             <span class="skill-tag">Power BI</span>
                             <span class="skill-tag">Tableau</span>
-                            <span class="skill-tag">MSC Office Suite</span>
+                            <span class="skill-tag">Matplotlib</span>
+                            <span class="skill-tag">Streamlit</span>
+                            <span class="skill-tag">Dashboarding</span>
                         </div>
                     </div>
 
-                    <div class="skills-category">
-                        <h2 class="skills-category__title">Certificates</h2>
-                        <div class="skills-tags">
-                            <span class="skill-tag">Introduction to Model Context Protocol - Anthropic</span>
-                            <span class="skill-tag">AI Fluency: Framework & Foundations - Anthropic</span>
-                            <span class="skill-tag">How to Analyze Business Metrics with SQL - Codecademy</span>
-                            <span class="skill-tag">Learn Statistics with R - Codecademy</span>
-                            <span class="skill-tag">BI Dashboards with Power BI - Codecademy</span>
-                            <span class="skill-tag">BI Dashboards with Tableau - Codecademy</span>
-                            <span class="skill-tag">Learn Prompt Engineering - Codecademy</span>
-                            <span class="skill-tag">Python (Advanced) - Study Section E-Learning</span>
+                    <div class="skill-category">
+                        <h3>Certifications</h3>
+                        <div class="certs-grid">
+                            <div class="cert-item-card">
+                                <i class="fas fa-scroll cert-icon"></i>
+                                <span class="cert-name">Model Context Protocol</span>
+                                <span class="cert-issuer">Anthropic</span>
+                            </div>
+                            <div class="cert-item-card">
+                                <i class="fas fa-microchip cert-icon"></i>
+                                <span class="cert-name">AI Fluency: Frameworks</span>
+                                <span class="cert-issuer">Anthropic</span>
+                            </div>
+                            <div class="cert-item-card">
+                                <i class="fas fa-database cert-icon"></i>
+                                <span class="cert-name">Business Metrics with SQL</span>
+                                <span class="cert-issuer">Codecademy</span>
+                            </div>
+                            <div class="cert-item-card">
+                                <i class="fas fa-chart-line cert-icon"></i>
+                                <span class="cert-name">Statistics with R</span>
+                                <span class="cert-issuer">Codecademy</span>
+                            </div>
+                            <div class="cert-item-card">
+                                <i class="fas fa-chart-bar cert-icon"></i>
+                                <span class="cert-name">BI Dashboards (Power BI)</span>
+                                <span class="cert-issuer">Codecademy</span>
+                            </div>
+                            <div class="cert-item-card">
+                                <i class="fas fa-table cert-icon"></i>
+                                <span class="cert-name">BI Dashboards (Tableau)</span>
+                                <span class="cert-issuer">Codecademy</span>
+                            </div>
+                            <div class="cert-item-card">
+                                <i class="fas fa-terminal cert-icon"></i>
+                                <span class="cert-name">Prompt Engineering</span>
+                                <span class="cert-issuer">Codecademy</span>
+                            </div>
+                            <div class="cert-item-card">
+                                <i class="fab fa-python cert-icon"></i>
+                                <span class="cert-name">Python (Advanced)</span>
+                                <span class="cert-issuer">Study Section</span>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="contact" class="page">
+        <!-- CONTACT -->
+        <section id="contact" class="section">
             <div class="container">
-                <h1 class="page-title">Get in Touch</h1>
+                <div class="contact-header">
+                    <h2>Let's connect and build something <span class="gradient-text">impactful</span>.</h2>
+                    <p class="contact-tagline">I am currently available for full-time positions and consulting projects. Reach out via any of the methods below.</p>
+                </div>
                 
-                <div class="contact-content">
-                    <div class="contact-info">
-                        <p>I'm always interested in discussing data science opportunities, collaborative projects, or just connecting with fellow data enthusiasts. Feel free to reach out!</p>
-                        
-                        <div class="contact-details">
-                            <div class="contact-item">
-                                <strong>Email:</strong>
-                                <a href="mailto:andreacappelluti7@gmail.com">andreacappelluti7@gmail.com</a>
-                            </div>
-                            <div class="contact-item">
-                                <strong>Academic Email:</strong>
-                                <a href="mailto:a.cappelluti@studenti.luiss.it">a.cappelluti@studenti.luiss.it</a>
-                            </div>
-                            <div class="contact-item">
-                                <strong>Phone:</strong>
-                                <a href="tel:+393397888853">+39 3397888853</a>
-                            </div>
-                            <div class="contact-item">
-                                <strong>Location:</strong>
-                                Rome, Italy
-                            </div>
-                        </div>
+                <div class="contact-methods grid">
+                    <a href="mailto:andreacappelluti7@gmail.com" class="contact-card">
+                        <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                        <h3 class="contact-title">Email Me</h3>
+                        <p class="contact-detail">andreacappelluti7@gmail.com</p>
+                    </a>
+                    
+                    <a href="https://www.linkedin.com/in/andrea-cappelluti-9b1a61282" target="_blank" class="contact-card">
+                        <div class="contact-icon"><i class="fab fa-linkedin-in"></i></div>
+                        <h3 class="contact-title">Connect on LinkedIn</h3>
+                        <p class="contact-detail">Andrea Cappelluti</p>
+                    </a>
 
-                        <div class="contact-linkedin">
-                            <a href="https://www.linkedin.com/in/andrea-cappelluti-9b1a61282" target="_blank" class="btn btn--primary btn--lg linkedin-btn">
-                                <span class="linkedin-icon">💼</span>
-                                Connect on LinkedIn
-                            </a>
-                        </div>
-                    </div>
+                    <a href="tel:+393397888853" class="contact-card">
+                        <div class="contact-icon"><i class="fas fa-phone-alt"></i></div>
+                        <h3 class="contact-title">Call Me</h3>
+                        <p class="contact-detail">+39 339 788 8853</p>
+                    </a>
                 </div>
             </div>
         </section>
@@ -388,12 +315,37 @@
 
     <footer class="footer">
         <div class="container">
-            <div class="footer__content">
-                <p>&copy; 2025 Andrea Cappelluti. All rights reserved.</p>
-                <p>Data Scientist & Analyst | Rome, Italy</p>
-            </div>
+            <p>&copy; 2025 Andrea Cappelluti. All rights reserved.</p>
         </div>
     </footer>
+
+    <!-- MODAL -->
+    <div id="project-modal" class="modal hidden">
+        <div class="modal-overlay"></div>
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 id="modal-title">Project Title</h3>
+                <button class="modal-close">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="modal-meta">
+                    <span id="modal-category" class="badge">Category</span>
+                    <span id="modal-period" style="color: var(--text-tertiary); font-size: 0.9rem; align-self: center;">Period</span>
+                </div>
+                
+                <p id="modal-overview" style="color: #fff; margin-bottom: 20px;"></p>
+                
+                <div class="project-section-title">Workflow</div>
+                <ul id="modal-workflow" style="padding-left: 20px; color: var(--text-secondary); margin-bottom: 20px;"></ul>
+
+                <div class="project-section-title">Results</div>
+                <p id="modal-results" style="color: var(--text-secondary);"></p>
+
+                <div class="project-section-title">Tech Stack</div>
+                <p id="modal-tech-stack" style="font-family: var(--font-mono); color: var(--accent-primary); font-size: 0.9rem;"></p>
+            </div>
+        </div>
+    </div>
 
     <script src="app.js"></script>
 </body>
