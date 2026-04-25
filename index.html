@@ -3,350 +3,528 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Andrea Cappelluti | Data Scientist</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Andrea Cappelluti — Data Scientist</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-    <!-- Font Awesome for icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=JetBrains+Mono:wght@400;500;600&family=Inter+Tight:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
-    <header class="header">
-        <nav class="nav container">
-            <a href="#home" class="nav__logo">
-                <span>//</span> Andrea Cappelluti
-            </a>
-            <button class="nav__toggle" aria-label="Toggle navigation">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-            <div class="nav__menu">
-                <ul class="nav__list">
-                    <li><a href="#home" class="nav__link active">Start</a></li>
-                    <li><a href="#about" class="nav__link">About</a></li>
-                    <li><a href="#projects" class="nav__link">Work</a></li>
-                    <li><a href="#education" class="nav__link">Education</a></li>
-                    <li><a href="#skills" class="nav__link">Skills</a></li>
-                    <li><a href="#contact" class="nav__link">Contact</a></li>
-                </ul>
-            </div>
-        </nav>
-    </header>
+<div class="grain"></div>
 
-    <main>
-        <!-- HERO -->
-        <section id="home" class="hero">
-            <div class="container">
-                <div class="hero__content">
-                    <span class="hero__greeting">Hello, I'm Andrea.</span>
-                    <h1 class="hero__headline">
-                        I transform complex data into <span class="gradient-text">actionable intelligence</span>.
-                    </h1>
-                    <p class="hero__subheadline">
-                        Highly analytical and results-driven Data Scientist adept at leveraging advanced analytics, machine learning, and AI to transform complex datasets into actionable insights and drive business growth.
-                    </p>
-                    <div class="btn-group">
-                        <a href="#projects" class="btn btn--primary">View Case Studies</a>
-                        <a href="#contact" class="btn btn--outline">Contact Me</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- ABOUT -->
-        <section id="about" class="section">
-            <div class="container">
-                <div class="grid about-grid">
-                    <div class="about-text">
-                        <h2>About Me</h2>
-                        <br>
-                        <p>
-                            I am a Master's student in <strong>Data Science and Management</strong> with a strong academic background in Economics and Big Data. My approach combines statistical rigor with modern software engineering practices to extract maximum value from data.
-                        </p>
-                        <br>
-                        <p>
-                            My expertise spans the entire data lifecycle, from <strong>data preprocessing and analysis</strong> to <strong>machine learning (ML), AI model development, and deep learning architectures</strong>. I am passionate about crafting solutions that are not only statistically sound but also deliver tangible business impact.
-                        </p>
-                    </div>
-                    
-                    <div class="about-summary">
-                        <p>
-                            <span class="highlight">Current Focus:</span> Advanced analytics, predictive modeling, and AI-driven automation.
-                        </p>
-                        <br>
-                        <p>
-                            <span class="highlight">Key Skills:</span> Data wrangling, statistical analysis, model deployment, business intelligence (BI) dashboarding, and developing robust data pipelines.
-                        </p>
-                        <br>
-                        <p>
-                            I thrive in environments where data curiosity meets business challenges, eager to contribute my technical skills to innovative projects.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- PROJECTS -->
-        <section id="projects" class="section">
-            <div class="container">
-                <h2>Featured Projects</h2>
-                <p style="margin-bottom: 40px">Selected works demonstrating end-to-end data capabilities, from analysis to advanced ML and AI solutions.</p>
-                
-                <div class="projects-grid grid">
-                    <!-- Project 1 -->
-                    <div class="project-card" data-project="unieuro-forecasting">
-                        <div class="folder-icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
-                        </div>
-                        <h3 class="project-title">Unieuro Sales Forecasting</h3>
-                        <p class="project-desc">Strategic predictive analytics for a major retailer. Forecasting sales for high-value categories to optimize inventory.</p>
-                        <div class="tech-stack-list">
-                            <span class="tech-badge">Python</span>
-                            <span class="tech-badge">XGBoost</span>
-                            <span class="tech-badge">Power BI</span>
-                        </div>
-                    </div>
-
-                    <!-- Project 2 -->
-                    <div class="project-card" data-project="multi-agent-system">
-                        <div class="folder-icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
-                        </div>
-                        <h3 class="project-title">Multi-Agent NLP System</h3>
-                        <p class="project-desc">AI architecture transforming natural language queries into automated data analysis workflows using GPT-4 agents.</p>
-                        <div class="tech-stack-list">
-                            <span class="tech-badge">OpenAI API</span>
-                            <span class="tech-badge">Streamlit</span>
-                            <span class="tech-badge">LangChain</span>
-                        </div>
-                    </div>
-
-                    <!-- Project 3 -->
-                    <div class="project-card" data-project="tv-movies-analysis">
-                        <div class="folder-icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polygon points="10 8 16 12 10 16 10 8"></polygon></svg>
-                        </div>
-                        <h3 class="project-title">Content Popularity Analysis</h3>
-                        <p class="project-desc">Statistical analysis of global entertainment content to identify key drivers of viewer engagement.</p>
-                        <div class="tech-stack-list">
-                            <span class="tech-badge">SQL</span>
-                            <span class="tech-badge">Statistics</span>
-                            <span class="tech-badge">Orange Data Mining</span>
-                        </div>
-                    </div>
-
-                    <!-- Project 4 -->
-                    <div class="project-card" data-project="sdg7-energy-analysis">
-                        <div class="folder-icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 20V10"></path><path d="M12 20V4"></path><path d="M6 20v-6"></path></svg>
-                        </div>
-                        <h3 class="project-title">SDG7 Energy Trends</h3>
-                        <p class="project-desc">Predictive modeling for global sustainable energy consumption patterns to generate policy insights.</p>
-                        <div class="tech-stack-list">
-                            <span class="tech-badge">Random Forest</span>
-                            <span class="tech-badge">Matplotlib</span>
-                            <span class="tech-badge">Scikit-learn</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- EDUCATION -->
-        <section id="education" class="section">
-            <div class="container">
-                <h2>Education Path</h2>
-                <div class="timeline" style="margin-top: 40px">
-                    <div class="timeline-item">
-                        <div class="timeline-dot"></div>
-                        <span class="timeline-date">Sep 2024 - Present</span>
-                        <h3 class="timeline-title">Master's in Data Science and Management</h3>
-                        <p class="timeline-org">LUISS Guido Carli, Rome</p>
-                        <p>Specialization in Advanced Machine Learning and Business Analytics.</p>
-                    </div>
-                    
-                    <div class="timeline-item">
-                        <div class="timeline-dot"></div>
-                        <span class="timeline-date">Sep 2025 - Feb 2026</span>
-                        <h3 class="timeline-title">Erasmus+ Exchange Program</h3>
-                        <p class="timeline-org">TalTech University, Tallinn</p>
-                        <p>Focus on Digital Governance and Data Systems.</p>
-                    </div>
-
-                    <div class="timeline-item">
-                        <div class="timeline-dot"></div>
-                        <span class="timeline-date">Sep 2021 - Jul 2024</span>
-                        <h3 class="timeline-title">Bachelor's in Economics and Big Data</h3>
-                        <p class="timeline-org">Università Roma Tre</p>
-                        <p>Graduated with 102/110. Thesis on Statistical Modeling for Economics.</p>
-                    </div>
-
-                        <div class="timeline-item">
-                            <div class="timeline-dot"></div>
-                            <span class="timeline-date">Sep 2016 - Jul 2021</span>
-                            <h3 class="timeline-title">Scientific High School Diploma</h3>
-                            <p class="timeline-org">Liceo Democrito</p>
-                        </div>                </div>
-            </div>
-        </section>
-
-        <!-- SKILLS -->
-        <section id="skills" class="section">
-            <div class="container">
-                <h2>Technical Expertise</h2>
-                <br>
-                <div class="skills-container grid" style="grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));">
-                    <div class="skill-category">
-                        <h3>Core Tech</h3>
-                        <div class="skill-tags">
-                            <span class="skill-tag">Python</span>
-                            <span class="skill-tag">SQL</span>
-                            <span class="skill-tag">R</span>
-                            <span class="skill-tag">Git</span>
-                            <span class="skill-tag">Preprocessing</span>
-                            <span class="skill-tag">Data Wrangling</span>
-                        </div>
-                    </div>
-                    
-                    <div class="skill-category">
-                        <h3>Data Science & ML</h3>
-                        <div class="skill-tags">
-                            <span class="skill-tag">Pandas</span>
-                            <span class="skill-tag">Scikit-learn</span>
-                            <span class="skill-tag">XGBoost</span>
-                            <span class="skill-tag">Deep Learning</span>
-                            <span class="skill-tag">AI/ML Models</span>
-                        </div>
-                    </div>
-
-                    <div class="skill-category">
-                        <h3>Visualization & BI</h3>
-                        <div class="skill-tags">
-                            <span class="skill-tag">Power BI</span>
-                            <span class="skill-tag">Tableau</span>
-                            <span class="skill-tag">Matplotlib</span>
-                            <span class="skill-tag">Streamlit</span>
-                            <span class="skill-tag">Dashboarding</span>
-                        </div>
-                    </div>
-
-                    <div class="skill-category">
-                        <h3>Certifications</h3>
-                        <div class="certs-grid">
-                            <div class="cert-item-card">
-                                <i class="fas fa-scroll cert-icon"></i>
-                                <span class="cert-name">Model Context Protocol</span>
-                                <span class="cert-issuer">Anthropic</span>
-                            </div>
-                            <div class="cert-item-card">
-                                <i class="fas fa-microchip cert-icon"></i>
-                                <span class="cert-name">AI Fluency: Frameworks</span>
-                                <span class="cert-issuer">Anthropic</span>
-                            </div>
-                            <div class="cert-item-card">
-                                <i class="fas fa-database cert-icon"></i>
-                                <span class="cert-name">Business Metrics with SQL</span>
-                                <span class="cert-issuer">Codecademy</span>
-                            </div>
-                            <div class="cert-item-card">
-                                <i class="fas fa-chart-line cert-icon"></i>
-                                <span class="cert-name">Statistics with R</span>
-                                <span class="cert-issuer">Codecademy</span>
-                            </div>
-                            <div class="cert-item-card">
-                                <i class="fas fa-chart-bar cert-icon"></i>
-                                <span class="cert-name">BI Dashboards (Power BI)</span>
-                                <span class="cert-issuer">Codecademy</span>
-                            </div>
-                            <div class="cert-item-card">
-                                <i class="fas fa-table cert-icon"></i>
-                                <span class="cert-name">BI Dashboards (Tableau)</span>
-                                <span class="cert-issuer">Codecademy</span>
-                            </div>
-                            <div class="cert-item-card">
-                                <i class="fas fa-terminal cert-icon"></i>
-                                <span class="cert-name">Prompt Engineering</span>
-                                <span class="cert-issuer">Codecademy</span>
-                            </div>
-                            <div class="cert-item-card">
-                                <i class="fab fa-python cert-icon"></i>
-                                <span class="cert-name">Python (Advanced)</span>
-                                <span class="cert-issuer">Study Section</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- CONTACT -->
-        <section id="contact" class="section">
-            <div class="container">
-                <div class="contact-header">
-                    <h2>Let's connect and build something <span class="gradient-text">impactful</span>.</h2>
-                    <p class="contact-tagline">I am currently available for full-time positions and consulting projects. Reach out via any of the methods below.</p>
-                </div>
-                
-                <div class="contact-methods grid">
-                    <a href="mailto:andreacappelluti7@gmail.com" class="contact-card">
-                        <div class="contact-icon"><i class="fas fa-envelope"></i></div>
-                        <h3 class="contact-title">Email Me</h3>
-                        <p class="contact-detail">andreacappelluti7@gmail.com</p>
-                    </a>
-                    
-                    <a href="https://www.linkedin.com/in/andrea-cappelluti-9b1a61282" target="_blank" class="contact-card">
-                        <div class="contact-icon"><i class="fab fa-linkedin-in"></i></div>
-                        <h3 class="contact-title">Connect on LinkedIn</h3>
-                        <p class="contact-detail">Andrea Cappelluti</p>
-                    </a>
-
-                    <a href="tel:+393397888853" class="contact-card">
-                        <div class="contact-icon"><i class="fas fa-phone-alt"></i></div>
-                        <h3 class="contact-title">Call Me</h3>
-                        <p class="contact-detail">+39 339 788 8853</p>
-                    </a>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer class="footer">
-        <div class="container">
-            <p>&copy; 2025 Andrea Cappelluti. All rights reserved.</p>
+<header class="header">
+    <nav class="nav container">
+        <a href="#home" class="nav__brand" data-page="home">
+            <span class="nav__brand-name">Andrea Cappelluti</span>
+        </a>
+        <div class="nav__menu" id="nav-menu">
+            <ul class="nav__list">
+                <li><a href="#home"       class="nav__link active" data-page="home"       data-i18n="nav.home">Home</a></li>
+                <li><a href="#experience" class="nav__link"        data-page="experience" data-i18n="nav.experience">Experience</a></li>
+                <li><a href="#projects"   class="nav__link"        data-page="projects"   data-i18n="nav.projects">Projects</a></li>
+                <li><a href="#education"  class="nav__link"        data-page="education"  data-i18n="nav.education">Education</a></li>
+                <li><a href="#skills"     class="nav__link"        data-page="skills"     data-i18n="nav.skills">Skills</a></li>
+                <li><a href="#contact"    class="nav__link"        data-page="contact"    data-i18n="nav.contact">Contact</a></li>
+            </ul>
         </div>
-    </footer>
+        <div class="nav__actions">
+            <button class="lang-toggle" id="lang-toggle" aria-label="Switch language">
+                <span id="lang-current">EN</span><span class="lang-sep">|</span><span id="lang-other">IT</span>
+            </button>
+            <a href="CV_Andrea_Cappelluti.pdf" class="cv-link" target="_blank" data-i18n="nav.cv">CV ↗</a>
+        </div>
+        <button class="nav__hamburger" id="nav-hamburger" aria-label="Toggle menu">
+            <span></span><span></span><span></span>
+        </button>
+    </nav>
+</header>
 
-    <!-- MODAL -->
-    <div id="project-modal" class="modal hidden">
-        <div class="modal-overlay"></div>
-        <div class="modal-content">
-            <div class="modal-header">
-                <h3 id="modal-title">Project Title</h3>
-                <button class="modal-close">&times;</button>
-            </div>
-            <div class="modal-body">
-                <div class="modal-meta">
-                    <span id="modal-category" class="badge">Category</span>
-                    <span id="modal-period" style="color: var(--text-tertiary); font-size: 0.9rem; align-self: center;">Period</span>
+<main class="main">
+
+<!-- ═══════════════ HOME ═══════════════ -->
+<section id="home" class="page active">
+
+    <section class="hero">
+        <div class="container hero__container">
+            <div class="hero__text">
+                <p class="hero__tag mono"># data_scientist &amp; analyst</p>
+                <h1 class="hero__name">Andrea<br>Cappelluti</h1>
+                <p class="hero__sub mono" data-i18n="hero.sub">Rome, Italy · LUISS MSc Data Science</p>
+                <div class="hero__actions">
+                    <a href="#contact" class="btn btn--accent" data-page="contact"><span class="mono" data-i18n="hero.cta1">&gt; get_in_touch</span></a>
+                    <a href="#projects" class="btn btn--ghost"  data-page="projects"><span class="mono" data-i18n="hero.cta2">&gt; view_projects</span></a>
                 </div>
-                
-                <p id="modal-overview" style="color: #fff; margin-bottom: 20px;"></p>
-                
-                <div class="project-section-title">Workflow</div>
-                <ul id="modal-workflow" style="padding-left: 20px; color: var(--text-secondary); margin-bottom: 20px;"></ul>
+            </div>
+            <div class="hero__visual">
+                <svg id="hero-scatter" viewBox="0 0 400 280" aria-hidden="true" preserveAspectRatio="xMidYMid meet"></svg>
+                <p class="hero__visual-label mono"># scatter(experience, impact)</p>
+            </div>
+        </div>
+    </section>
 
-                <div class="project-section-title">Results</div>
-                <p id="modal-results" style="color: var(--text-secondary);"></p>
+    <section class="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag mono"># about</span>
+                <h2 class="section-title" data-i18n="about.title">About Me</h2>
+            </div>
+            <p class="about__text" data-i18n="about.text">I'm Andrea, 23, from Rome. I'm a Master's researcher in Data Science and Management at LUISS Guido Carli, focusing on the intersection of statistical learning and automated decision-making — driven by the challenge of extracting signal from high-dimensional noise. My technical core spans Deep Learning architectures, Probabilistic Modeling, and Multi-Agent AI Systems, with rigorous validation and mathematical soundness at the center of every model I deploy. Former professional basketball player, part-time mountain photographer.</p>
+        </div>
+    </section>
 
-                <div class="project-section-title">Tech Stack</div>
-                <p id="modal-tech-stack" style="font-family: var(--font-mono); color: var(--accent-primary); font-size: 0.9rem;"></p>
+    <section class="featured">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag mono"># featured_projects</span>
+                <h2 class="section-title" data-i18n="feat.title">Featured Projects</h2>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card" data-project="mobility-lens">
+                    <div class="project-card__chart" data-chart="scatter"></div>
+                    <div class="project-card__meta">
+                        <span class="mono project-card__cat" data-i18n="p.mobility.cat">Data Eng · RAG · Consulting</span>
+                        <span class="mono project-card__period">02/2026 – 04/2026</span>
+                    </div>
+                    <h3 class="project-card__title" data-i18n="p.mobility.title">Mobility Lens Platform</h3>
+                    <p class="project-card__desc" data-i18n="p.mobility.desc">Integrated analysis platform combining public transport + real estate data across Milan. Built RAG system for personalized reports.</p>
+                    <div class="project-card__tags">
+                        <span class="tech-tag">Python</span><span class="tech-tag">RAG</span><span class="tech-tag">Supabase</span><span class="tech-tag">Dashboards</span>
+                    </div>
+                    <button class="project-card__cta project-details-btn mono" data-project="mobility-lens" data-i18n="p.cta">&gt; view_details</button>
+                </div>
+
+                <div class="project-card" data-project="multi-agent-system">
+                    <div class="project-card__chart" data-chart="network"></div>
+                    <div class="project-card__meta">
+                        <span class="mono project-card__cat" data-i18n="p.multiagent.cat">AI · NLP · Multi-Agent</span>
+                        <span class="mono project-card__period">03/2025 – 04/2025</span>
+                    </div>
+                    <h3 class="project-card__title" data-i18n="p.multiagent.title">Multi-Agent NLP System</h3>
+                    <p class="project-card__desc" data-i18n="p.multiagent.desc">AI system converting natural language to automated data analysis using GPT-4.1, OpenAI Agent SDK, and LlamaIndex on public datasets.</p>
+                    <div class="project-card__tags">
+                        <span class="tech-tag">GPT-4.1</span><span class="tech-tag">Python</span><span class="tech-tag">Streamlit</span><span class="tech-tag">LlamaIndex</span>
+                    </div>
+                    <button class="project-card__cta project-details-btn mono" data-project="multi-agent-system" data-i18n="p.cta">&gt; view_details</button>
+                </div>
+
+                <div class="project-card" data-project="unieuro-forecasting">
+                    <div class="project-card__chart" data-chart="bar"></div>
+                    <div class="project-card__meta">
+                        <span class="mono project-card__cat" data-i18n="p.unieuro.cat">Sales Analytics · ML</span>
+                        <span class="mono project-card__period">03/2025 – 04/2025</span>
+                    </div>
+                    <h3 class="project-card__title" data-i18n="p.unieuro.title">Unieuro Sales Forecasting</h3>
+                    <p class="project-card__desc" data-i18n="p.unieuro.desc">Sales prediction for key product categories using XGBoost, Gradient Boosting, and Random Forest with interactive Power BI dashboards.</p>
+                    <div class="project-card__tags">
+                        <span class="tech-tag">XGBoost</span><span class="tech-tag">Power BI</span><span class="tech-tag">Python</span>
+                    </div>
+                    <button class="project-card__cta project-details-btn mono" data-project="unieuro-forecasting" data-i18n="p.cta">&gt; view_details</button>
+                </div>
+
+            </div>
+            <div class="see-all">
+                <a href="#projects" class="btn btn--ghost mono" data-page="projects" data-i18n="feat.all">&gt; all_projects()</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="activities">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag mono"># beyond_data</span>
+                <h2 class="section-title" data-i18n="act.title">Beyond the Data</h2>
+            </div>
+            <div class="activities-grid">
+                <div class="activity-card">
+                    <div class="activity-card__icon">⛹</div>
+                    <h3 class="activity-card__title" data-i18n="act.b.title">Pro Basketball</h3>
+                    <p class="activity-card__desc" data-i18n="act.b.desc">Former professional basketball player — discipline, teamwork, and performing under pressure.</p>
+                </div>
+                <div class="activity-card">
+                    <div class="activity-card__icon">📷</div>
+                    <h3 class="activity-card__title" data-i18n="act.p.title">Trail Photography</h3>
+                    <p class="activity-card__desc" data-i18n="act.p.desc">Hiking & trekking photographer — finding patterns and light in complex landscapes.</p>
+                </div>
+                <div class="activity-card">
+                    <div class="activity-card__icon">🔬</div>
+                    <h3 class="activity-card__title" data-i18n="act.s.title">Sport Science</h3>
+                    <p class="activity-card__desc" data-i18n="act.s.desc">Sport science enthusiast — where biomechanics meets data at the frontier of human performance.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</section><!-- end #home -->
+
+<!-- ═══════════════ EXPERIENCE ═══════════════ -->
+<section id="experience" class="page">
+    <div class="container page-container">
+        <div class="section-header">
+            <span class="section-tag mono"># work_experience</span>
+            <h1 class="page-title" data-i18n="exp.title">Work Experience</h1>
+        </div>
+        <div class="exp-timeline">
+
+            <div class="exp-item">
+                <div class="exp-item__left">
+                    <span class="exp-item__period mono">04/2026 – <span data-i18n="exp.present">Present</span></span>
+                    <span class="exp-item__badge" data-i18n="exp.current">Current</span>
+                </div>
+                <div class="exp-item__connector">
+                    <div class="exp-item__dot exp-item__dot--live"></div>
+                    <div class="exp-item__line"></div>
+                </div>
+                <div class="exp-item__body">
+                    <h2 class="exp-item__role" data-i18n="exp.msx.role">Customer Service Specialist</h2>
+                    <p class="exp-item__company">MSX International</p>
+                    <ul class="exp-item__bullets">
+                        <li data-i18n="exp.msx.b1">Maintain and process large-scale vehicle databases through data cleaning and quality control, optimizing operational workflows and minimizing service downtimes.</li>
+                        <li data-i18n="exp.msx.b2">Analyze customer data to identify needs and deliver tailored solutions to Ford customers, leveraging data-driven insights to enhance customer satisfaction.</li>
+                    </ul>
+                    <div class="exp-item__tags">
+                        <span class="tech-tag">SQL</span><span class="tech-tag">Data Cleaning</span><span class="tech-tag">Customer Analytics</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="exp-item">
+                <div class="exp-item__left">
+                    <span class="exp-item__period mono">02/2026 – 04/2026</span>
+                </div>
+                <div class="exp-item__connector">
+                    <div class="exp-item__dot"></div>
+                    <div class="exp-item__line"></div>
+                </div>
+                <div class="exp-item__body">
+                    <h2 class="exp-item__role" data-i18n="exp.basco.role">Data Science Intern</h2>
+                    <p class="exp-item__company">Basco&amp;T Consulting</p>
+                    <ul class="exp-item__bullets">
+                        <li data-i18n-html="exp.basco.b1">Contributed to <strong>Mobility Lens</strong>: an integrated analysis &amp; visualization platform combining public transport data with real estate pricing across Milan.</li>
+                        <li data-i18n="exp.basco.b2">Built data pipelines and interactive dashboards to visualize mobility patterns and real estate market trends, enabling data-driven strategic reports for public transport clients.</li>
+                        <li data-i18n="exp.basco.b3">Built a RAG system to provide personalized real-estate reports including public transport data and composite neighborhood indicators.</li>
+                    </ul>
+                    <div class="exp-item__tags">
+                        <span class="tech-tag">Python</span><span class="tech-tag">RAG</span><span class="tech-tag">Dashboards</span><span class="tech-tag">Supabase</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- ═══════════════ PROJECTS ═══════════════ -->
+<section id="projects" class="page">
+    <div class="container page-container">
+        <div class="section-header">
+            <span class="section-tag mono"># projects</span>
+            <h1 class="page-title" data-i18n="proj.title">Projects</h1>
+        </div>
+        <div class="projects-grid projects-grid--full">
+            <div class="project-card" data-project="mobility-lens">
+                <div class="project-card__chart" data-chart="scatter"></div>
+                <div class="project-card__meta">
+                    <span class="mono project-card__cat" data-i18n="p.mobility.cat">Data Eng · RAG · Consulting</span>
+                    <span class="mono project-card__period">02/2026 – 04/2026</span>
+                </div>
+                <h3 class="project-card__title" data-i18n="p.mobility.title">Mobility Lens Platform</h3>
+                <p class="project-card__desc" data-i18n="p.mobility.desc">Integrated analysis platform combining public transport + real estate data across Milan. Built RAG system for personalized reports.</p>
+                <div class="project-card__tags">
+                    <span class="tech-tag">Python</span><span class="tech-tag">RAG</span><span class="tech-tag">Supabase</span><span class="tech-tag">Dashboards</span>
+                </div>
+                <button class="project-card__cta project-details-btn mono" data-project="mobility-lens" data-i18n="p.cta">&gt; view_details</button>
+            </div>
+
+            <div class="project-card" data-project="multi-agent-system">
+                <div class="project-card__chart" data-chart="network"></div>
+                <div class="project-card__meta">
+                    <span class="mono project-card__cat" data-i18n="p.multiagent.cat">AI · NLP · Multi-Agent</span>
+                    <span class="mono project-card__period">03/2025 – 04/2025</span>
+                </div>
+                <h3 class="project-card__title" data-i18n="p.multiagent.title">Multi-Agent NLP System</h3>
+                <p class="project-card__desc" data-i18n="p.multiagent.desc">AI system converting natural language to automated data analysis using GPT-4.1, OpenAI Agent SDK, and LlamaIndex on public datasets.</p>
+                <div class="project-card__tags">
+                    <span class="tech-tag">GPT-4.1</span><span class="tech-tag">Python</span><span class="tech-tag">Streamlit</span><span class="tech-tag">LlamaIndex</span>
+                </div>
+                <button class="project-card__cta project-details-btn mono" data-project="multi-agent-system" data-i18n="p.cta">&gt; view_details</button>
+            </div>
+
+            <div class="project-card" data-project="unieuro-forecasting">
+                <div class="project-card__chart" data-chart="bar"></div>
+                <div class="project-card__meta">
+                    <span class="mono project-card__cat" data-i18n="p.unieuro.cat">Sales Analytics · ML</span>
+                    <span class="mono project-card__period">03/2025 – 04/2025</span>
+                </div>
+                <h3 class="project-card__title" data-i18n="p.unieuro.title">Unieuro Sales Forecasting</h3>
+                <p class="project-card__desc" data-i18n="p.unieuro.desc">Sales prediction for key product categories using XGBoost, Gradient Boosting, and Random Forest with interactive Power BI dashboards.</p>
+                <div class="project-card__tags">
+                    <span class="tech-tag">XGBoost</span><span class="tech-tag">Power BI</span><span class="tech-tag">Python</span>
+                </div>
+                <button class="project-card__cta project-details-btn mono" data-project="unieuro-forecasting" data-i18n="p.cta">&gt; view_details</button>
+            </div>
+
+            <div class="project-card" data-project="tv-movies-analysis">
+                <div class="project-card__chart" data-chart="scatter"></div>
+                <div class="project-card__meta">
+                    <span class="mono project-card__cat" data-i18n="p.tv.cat">Data Analysis · Clustering · ML</span>
+                    <span class="mono project-card__period">01/2024 – 03/2024</span>
+                </div>
+                <h3 class="project-card__title" data-i18n="p.tv.title">TV & Movies Popularity Analysis</h3>
+                <p class="project-card__desc" data-i18n="p.tv.desc">Global entertainment content analysis to identify popularity drivers via ML, K-Means clustering, and Spearman correlation on Kaggle datasets.</p>
+                <div class="project-card__tags">
+                    <span class="tech-tag">SQL</span><span class="tech-tag">Orange</span><span class="tech-tag">K-Means</span><span class="tech-tag">Python</span>
+                </div>
+                <button class="project-card__cta project-details-btn mono" data-project="tv-movies-analysis" data-i18n="p.cta">&gt; view_details</button>
+            </div>
+
+            <div class="project-card" data-project="sdg7-energy-analysis">
+                <div class="project-card__chart" data-chart="area"></div>
+                <div class="project-card__meta">
+                    <span class="mono project-card__cat" data-i18n="p.sdg7.cat">Sustainability · ML</span>
+                    <span class="mono project-card__period">03/2024 – 05/2024</span>
+                </div>
+                <h3 class="project-card__title" data-i18n="p.sdg7.title">SDG7 Global Energy Analysis</h3>
+                <p class="project-card__desc" data-i18n="p.sdg7.desc">Predictive modeling of global sustainable energy trends. Random Forest (R²=0.89) outperformed baseline. Policy insights from World Bank & IEA data.</p>
+                <div class="project-card__tags">
+                    <span class="tech-tag">Python</span><span class="tech-tag">Random Forest</span><span class="tech-tag">Data Viz</span>
+                </div>
+                <button class="project-card__cta project-details-btn mono" data-project="sdg7-energy-analysis" data-i18n="p.cta">&gt; view_details</button>
             </div>
         </div>
     </div>
+</section>
 
-    <script src="app.js"></script>
+<!-- ═══════════════ MODAL ═══════════════ -->
+<div id="project-modal" class="modal hidden">
+    <div class="modal__overlay">
+        <div class="modal__content">
+            <div class="modal__header">
+                <div>
+                    <p class="modal__cat mono" id="modal-category"></p>
+                    <h2 class="modal__title" id="modal-title"></h2>
+                    <p class="modal__period mono" id="modal-period"></p>
+                </div>
+                <button class="modal__close" aria-label="Close">&times;</button>
+            </div>
+            <div class="modal__body">
+                <div class="modal__section">
+                    <h3 class="modal__sh mono" data-i18n="modal.overview"># overview</h3>
+                    <p id="modal-overview"></p>
+                </div>
+                <div class="modal__section">
+                    <h3 class="modal__sh mono" data-i18n="modal.workflow"># workflow</h3>
+                    <ul id="modal-workflow" class="modal__list"></ul>
+                </div>
+                <div class="modal__section">
+                    <h3 class="modal__sh mono" data-i18n="modal.methodology"># methodology</h3>
+                    <p id="modal-methodology"></p>
+                </div>
+                <div class="modal__section">
+                    <h3 class="modal__sh mono" data-i18n="modal.results"># results</h3>
+                    <p id="modal-results"></p>
+                </div>
+                <div class="modal__section">
+                    <h3 class="modal__sh mono" data-i18n="modal.tech"># tech_stack</h3>
+                    <p class="modal__tech" id="modal-tech-stack"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ═══════════════ EDUCATION ═══════════════ -->
+<section id="education" class="page">
+    <div class="container page-container">
+        <div class="section-header">
+            <span class="section-tag mono"># education</span>
+            <h1 class="page-title" data-i18n="edu.title">Education & Qualifications</h1>
+        </div>
+
+        <div class="edu-block">
+            <h2 class="edu-block__title" data-i18n="edu.academic">Academic Background</h2>
+            <div class="timeline">
+                <div class="timeline-item fade-up">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-row">
+                            <h3 data-i18n="edu.m.title">Master's — Data Science and Management</h3>
+                            <span class="tl-period mono">09/2024 – 10/2026</span>
+                        </div>
+                        <p class="tl-inst mono">LUISS Guido Carli · Rome, Italy</p>
+                        <div class="courses-block">
+                            <p class="courses-label mono" data-i18n="edu.courses">Relevant Courses</p>
+                            <div class="course-pills">
+                                <span class="course-pill"><span>Advanced Statistics</span><span class="course-grade mono">29/30</span></span>
+                                <span class="course-pill"><span>Econometrics</span><span class="course-grade mono">30L/30</span></span>
+                                <span class="course-pill"><span>Machine Learning</span><span class="course-grade mono">28/30</span></span>
+                                <span class="course-pill"><span>Data Privacy &amp; Security</span><span class="course-grade mono">27/30</span></span>
+                                <span class="course-pill"><span>Data Visualization</span><span class="course-grade mono">28/30</span></span>
+                                <span class="course-pill"><span>Technology Entrepreneurship</span><span class="course-grade mono">30L/30</span></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item fade-up">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-row">
+                            <h3 data-i18n="edu.e.title">Erasmus+ Exchange Program</h3>
+                            <span class="tl-period mono">09/2025 – 02/2026</span>
+                        </div>
+                        <p class="tl-inst mono">TalTech University · Tallinn, Estonia</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item fade-up">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-row">
+                            <h3 data-i18n="edu.b.title">Bachelor's — Economics &amp; Big Data</h3>
+                            <span class="tl-period mono">09/2021 – 07/2024</span>
+                        </div>
+                        <p class="tl-inst mono">Università degli Studi Roma Tre · Rome, Italy</p>
+                        <p class="tl-grade mono">102/110</p>
+                        <div class="courses-block">
+                            <p class="courses-label mono" data-i18n="edu.courses">Relevant Courses</p>
+                            <div class="course-pills">
+                                <span class="course-pill"><span>Databases &amp; Big Data</span><span class="course-grade mono">29/30</span></span>
+                                <span class="course-pill"><span>Statistics for Big Data</span><span class="course-grade mono">26/30</span></span>
+                                <span class="course-pill"><span>Statistical Learning</span><span class="course-grade mono">30/30</span></span>
+                                <span class="course-pill"><span>ML &amp; Data Processing</span><span class="course-grade mono">28/30</span></span>
+                                <span class="course-pill"><span>Digitalization of Labor Market</span><span class="course-grade mono">30/30</span></span>
+                                <span class="course-pill"><span>Economics of Digital Markets</span><span class="course-grade mono">28/30</span></span>
+                            </div>
+                        </div>
+                        <div class="thesis-block">
+                            <p class="thesis-label mono" data-i18n="edu.thesis">Thesis</p>
+                            <p class="thesis-title">"Implementation of Artificial Intelligence in Online Platform: Impacts, Opportunities and Challenges"</p>
+                            <p class="thesis-meta mono"><span data-i18n="edu.subject">Subject:</span> Economics of Digital Markets &nbsp;·&nbsp; <span data-i18n="edu.advisor">Advisor:</span> Eleonora Pierucci</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item fade-up">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-row">
+                            <h3 data-i18n="edu.hs.title">Scientific High School Diploma</h3>
+                            <span class="tl-period mono">09/2016 – 06/2021</span>
+                        </div>
+                        <p class="tl-inst mono">Liceo Scientifico Democrito · Rome, Italy</p>
+                        <p class="tl-grade mono">80/100</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="edu-block">
+            <h2 class="edu-block__title" data-i18n="edu.certs">Certifications</h2>
+            <div class="certs-grid">
+                <div class="cert-card fade-up"><div class="cert-org mono">Anthropic</div><div class="cert-name" data-i18n="cert.mcp">Intro to Model Context Protocol</div></div>
+                <div class="cert-card fade-up"><div class="cert-org mono">Anthropic</div><div class="cert-name" data-i18n="cert.aif">AI Fluency: Framework &amp; Foundations</div></div>
+                <div class="cert-card fade-up"><div class="cert-org mono">Codecademy</div><div class="cert-name" data-i18n="cert.sql">Business Metrics with SQL</div></div>
+                <div class="cert-card fade-up"><div class="cert-org mono">Codecademy</div><div class="cert-name" data-i18n="cert.r">Learn Statistics with R</div></div>
+                <div class="cert-card fade-up"><div class="cert-org mono">Codecademy</div><div class="cert-name" data-i18n="cert.pbi">BI Dashboards with Power BI</div></div>
+                <div class="cert-card fade-up"><div class="cert-org mono">Codecademy</div><div class="cert-name" data-i18n="cert.tab">BI Dashboards with Tableau</div></div>
+                <div class="cert-card fade-up"><div class="cert-org mono">Codecademy</div><div class="cert-name" data-i18n="cert.pe">Learn Prompt Engineering</div></div>
+                <div class="cert-card fade-up"><div class="cert-org mono">Study Section</div><div class="cert-name" data-i18n="cert.py">Python (Advanced)</div></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ═══════════════ SKILLS ═══════════════ -->
+<section id="skills" class="page">
+    <div class="container page-container">
+        <div class="section-header">
+            <span class="section-tag mono"># skills</span>
+            <h1 class="page-title" data-i18n="sk.title">Skills &amp; Technologies</h1>
+        </div>
+        <div class="skills-layout">
+            <div class="skills-cat">
+                <h2 class="skills-cat__title mono" data-i18n="sk.ai"># ai_skills</h2>
+                <div class="skills-tags">
+                    <span class="skill-tag skill-tag--ai">Claude Code</span>
+                    <span class="skill-tag skill-tag--ai">Gemini CLI</span>
+                    <span class="skill-tag skill-tag--ai">Google AI Studio</span>
+                    <span class="skill-tag skill-tag--ai">LLM APIs</span>
+                    <span class="skill-tag skill-tag--ai">RAG</span>
+                </div>
+            </div>
+            <div class="skills-cat">
+                <h2 class="skills-cat__title mono" data-i18n="sk.it"># it_skills</h2>
+                <div class="skills-tags">
+                    <span class="skill-tag">Python</span>
+                    <span class="skill-tag">R</span>
+                    <span class="skill-tag">Stata</span>
+                    <span class="skill-tag">SQL</span>
+                    <span class="skill-tag">Power BI</span>
+                    <span class="skill-tag">Tableau</span>
+                    <span class="skill-tag">Orange Data Mining</span>
+                    <span class="skill-tag">Supabase</span>
+                    <span class="skill-tag">MS Office Suite</span>
+                </div>
+            </div>
+            <div class="skills-cat">
+                <h2 class="skills-cat__title mono" data-i18n="sk.lang"># languages</h2>
+                <div class="lang-bars">
+                    <div class="lang-item">
+                        <div class="lang-item__row">
+                            <span class="lang-name" data-i18n="lang.it">Italian</span>
+                            <span class="lang-level mono" data-i18n="lang.native">Native</span>
+                        </div>
+                        <div class="lang-bar"><div class="lang-bar__fill" style="--pct:100%"></div></div>
+                    </div>
+                    <div class="lang-item">
+                        <div class="lang-item__row">
+                            <span class="lang-name" data-i18n="lang.en">English</span>
+                            <span class="lang-level mono">C1</span>
+                        </div>
+                        <div class="lang-bar"><div class="lang-bar__fill" style="--pct:85%"></div></div>
+                    </div>
+                    <div class="lang-item">
+                        <div class="lang-item__row">
+                            <span class="lang-name" data-i18n="lang.es">Spanish</span>
+                            <span class="lang-level mono">A2</span>
+                        </div>
+                        <div class="lang-bar"><div class="lang-bar__fill" style="--pct:25%"></div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ═══════════════ CONTACT ═══════════════ -->
+<section id="contact" class="page">
+    <div class="container page-container">
+        <div class="section-header">
+            <span class="section-tag mono"># contact</span>
+            <h1 class="page-title" data-i18n="ct.title">Get in Touch</h1>
+        </div>
+        <div class="contact-layout">
+            <p class="contact-intro" data-i18n="ct.text">Open to data science opportunities, research collaborations, and conversations with fellow data enthusiasts.</p>
+            <div class="contact-terminal">
+                <div class="t-line"><span class="t-prompt mono">&gt;</span><span class="t-key mono" data-i18n="ct.email">email</span><a href="mailto:andreacappelluti7@gmail.com" class="t-val mono">andreacappelluti7@gmail.com</a></div>
+                <div class="t-line"><span class="t-prompt mono">&gt;</span><span class="t-key mono" data-i18n="ct.academic">academic</span><a href="mailto:a.cappelluti@studenti.luiss.it" class="t-val mono">a.cappelluti@studenti.luiss.it</a></div>
+                <div class="t-line"><span class="t-prompt mono">&gt;</span><span class="t-key mono" data-i18n="ct.phone">phone</span><a href="tel:+393397888853" class="t-val mono">+39 339 788 8853</a></div>
+                <div class="t-line"><span class="t-prompt mono">&gt;</span><span class="t-key mono" data-i18n="ct.location">location</span><span class="t-val mono">Rome, Italy</span></div>
+                <div class="t-line"><span class="t-prompt mono">&gt;</span><span class="t-key mono">LinkedIn</span><a href="https://www.linkedin.com/in/andrea-cappelluti-9b1a61282" target="_blank" class="t-val mono t-val--link">andrea-cappelluti ↗</a></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+</main>
+
+<footer class="footer">
+    <div class="container footer__inner">
+        <p class="footer__l">Andrea Cappelluti &nbsp;·&nbsp; Data Scientist &amp; Analyst &nbsp;·&nbsp; Rome, Italy</p>
+        <p class="footer__r mono">--last_updated: 2026-04-25 //</p>
+    </div>
+</footer>
+
+<script src="app.js"></script>
 </body>
 </html>
