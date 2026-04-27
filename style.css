@@ -124,8 +124,17 @@ body::before {
 }
 .nav__brand:hover .nav__brand-name { color: var(--accent); }
 
-.nav__menu { flex: 1; display: flex; justify-content: center; }
-.nav__list { display: flex; gap: .15rem; }
+.nav__menu {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  height: var(--nav-h);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 101;
+  pointer-events: none;
+}
+.nav__list { display: flex; gap: .15rem; pointer-events: auto; }
 .nav__link {
   font-family: var(--ff-mono);
   font-size: .68rem;
@@ -721,16 +730,19 @@ a.t-val:hover { color: var(--accent); }
 @media (max-width: 768px) {
   .nav__menu {
     position: fixed;
-    inset: var(--nav-h) 0 0 0;
+    top: var(--nav-h); left: 0; right: 0; bottom: 0;
+    height: auto;
     background: rgb(10,13,18);
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
     flex-direction: column;
+    align-items: flex-start;
     justify-content: flex-start;
     padding: 2rem;
     transform: translateX(100%);
     transition: transform var(--ease);
-    z-index: 200;
+    z-index: 1001;
+    pointer-events: auto;
   }
   .nav__menu.open { transform: translateX(0); }
   .nav__list { flex-direction: column; gap: .35rem; }
